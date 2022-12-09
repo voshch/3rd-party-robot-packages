@@ -15,7 +15,7 @@
 
   <!-- Joint trajectory and diff drive controllers -->
   <rosparam command="load" file="$(find tiago_controller_configuration_gazebo)/config/mobile_base_controller$(arg base_type_suffix).yaml"/>
-  <!-- <include file="$(find tiago_controller_configuration_gazebo)/launch/tiago_controllers.launch">
+  <include file="$(find tiago_controller_configuration_gazebo)/launch/tiago_controllers.launch">
     <arg name="arm" value="$(arg arm)"/>
     <arg name="end_effector" value="$(arg end_effector)"/>
     <arg name="ft_sensor" value="$(arg ft_sensor)"/>
@@ -25,7 +25,7 @@
     <arg name="robot_namespace" value="$(arg robot_namespace)"/>
     <arg name="base_type_suffix"  value="$(arg base_type_suffix)"/>
     <arg name="base_type" value="$(arg base_type)"/>
-  </include> -->
+  </include>
 
 
 

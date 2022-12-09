@@ -21,14 +21,6 @@
 
   <gazebo>
     <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
-      <ns></ns>
-      <robotSimType>pal_hardware_gazebo/PalHardwareGazebo</robotSimType>
-      <xacro:if value="${is_multiple}">
-          <robotNamespace>/${nsp}</robotNamespace>
-      </xacro:if>
-      <xacro:unless value="${is_multiple}">
-          <robotNamespace></robotNamespace>
-      </xacro:unless>
       <controlPeriod>0.001</controlPeriod>
     </plugin>
 
