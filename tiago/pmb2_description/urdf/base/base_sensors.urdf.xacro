@@ -26,7 +26,7 @@
   <xacro:include filename="$(find pmb2_description)/urdf/sensors/microphone.urdf.xacro"/>
 
   <!-- Laser characteristics -->
-  <xacro:property name="base_laser_x" value="0.202"/>
+  <xacro:property name="base_laser_x" value="0.232"/>
   <xacro:property name="base_laser_y" value="0.0"/>
   <xacro:property name="base_laser_z" value="-0.004"/>
 
