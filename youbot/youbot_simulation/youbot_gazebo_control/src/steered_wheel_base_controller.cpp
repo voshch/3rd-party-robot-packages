@@ -1147,7 +1147,7 @@ init(EffortJointInterface *const eff_joint_iface,
 //         odom_tf_pub_.init(ctrlr_nh, "/tf", 1);
     }
 
-    vel_cmd_sub_ = ctrlr_nh.subscribe("/cmd_vel", 1,
+    vel_cmd_sub_ = ctrlr_nh.subscribe("cmd_vel", 1,
                                       &SteeredWheelBaseController::velCmdCB,
                                       this);
 }
