@@ -17,7 +17,7 @@
       <sensor type="contact" name="${name}">
         <pose>0 0 0 0 0 0</pose>
         <update_rate>${update_rate}</update_rate>
-        <visualize>false</visualize>
+        <visualize>true</visualize>
         <plugin filename="libgazebo_ros_bumper.so" name="gazebo_ros_bumper">
           <alwaysOn>true</alwaysOn>
           <updateRate>${update_rate}</updateRate>
